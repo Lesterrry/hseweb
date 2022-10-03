@@ -67,39 +67,122 @@ article img {
 }
 
 /* NAVIGATION */
-nav {
+.sidebar {
 	width: 248px;
 	position: fixed;
-	top: 20px;
-	left: 20px;
-	padding: 30px;
+	top: 150px;
+	padding: 0 30px;
 }
-nav * {
+.sidebar * {
 	margin-left: 0;
 	margin-right: 0;
 	text-decoration: none;
 }
-nav h1 {
+.sidebar h1 {
 	font-weight: 700;
 	font-size: 18px;
 }
-nav a {
+.sidebar a {
 	font-size: 15px;
 	color: #7A7A7A;
+	transition: all .2s linear;
 }
-nav a:hover {
+.sidebar a:hover {
 	color: #000;
 }
-nav ul {
+.sidebar ul {
 	margin-top: 12px;
+	margin-left: 10px;
 	list-style-type: none;
 }
-nav li {
+.sidebar li {
 	margin-top: 12px;
 	line-height: 20px;
 }
-nav ul > ul {
+.sidebar ul > ul {
 	margin-top: 0;
 	margin-left: 10px;
 	color: #777;
+}
+.menubar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	border-bottom: 1px solid #bbb;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 10px 20px;
+	background: white;
+}
+.menubar a {
+	text-decoration: none;
+	font-size: 17px;
+	color: #7A7A7A;
+	transition: all .2s linear;
+}
+.menubar a:hover {
+	color: #000;
+}
+
+/* ABOUT */
+section {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	width: 100%;
+	margin-top: 110px;
+	overflow: hidden;
+}
+section h2, footer h2 {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 38px;
+}
+section p, footer p {
+	font-size: 18px;
+	line-height: 28px;
+	margin-top: 25px;
+}
+section div.text {
+	padding-right: 100px;
+}
+section div:first-child {
+	padding: 0 100px;
+}
+section img.overflow {
+	margin-right: -250px;
+}
+footer {
+	border-top: 1px solid #bbb;
+	min-width: 500px;
+	padding: 75px 350px;
+	text-align: center;
+}
+footer div {
+	margin-top: 50px;
+}
+footer button {
+	padding: 10px 40px;
+	font-size: 14px;
+	transition: all .2s linear;
+}
+footer button.secondary {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	background: white;
+	color: #888;
+}
+footer button.primary {
+	border: 1px solid black;
+	border-radius: 6px;
+	background: black;
+	color: #fff;
+}
+footer button.primary:hover {
+	background: #434343;
+	border: 1px solid #434343;
+}
+footer button.secondary:hover {
+	background: #e5e5e5;
+	border: 1px solid #e5e5e5;
 }

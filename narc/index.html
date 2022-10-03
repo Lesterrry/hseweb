@@ -3,23 +3,27 @@
 		<meta charset="utf-8"/>
 		<title>Дом Наркомфина</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/jq.js" charset="utf-8"></script>
 	</head>
 	<body>
-		<nav>
-			<h1>Дом Наркомфина</h1>
+		<div class="menubar">
+			<a href="index.html"><img src="img/logo.svg" width="250"></a>
+			<a href="about.html">About</a>
+		</div>
+		<nav class="sidebar">
+			<a href="#1"><h1>Дом Наркомфина</h1></a>
 			<ul>
-				<li><a href="">История создания дома Наркомфина</a></li>
-				<li><a href="">Идеология</a></li>
-				<li><a href="">Text</a></li>
-				<li><a href="">Text</a></li>
-				<li><a href="">Text</a></li>
-				<li><a href="">Text</a></li>
-				<li><a href="">Text</a></li>
-				<li><a href="">Text</a></li>
+				<li><a href="#2">История создания дома Наркомфина</a></li>
+				<li><a href="#3">Идеология</a></li>
+				<li><a href="#4">Text</a></li>
+				<li><a href="#5">Text</a></li>
+				<li><a href="#6">Text</a></li>
+				<li><a href="#7">Text</a></li>
+				<li><a href="#8">Text</a></li>
 			</ul>
 		</nav>
 		<article>
-			<h1>
+			<h1 id="1">
 				Дом Наркомфина – жилой дом переходного типа
 			</h1>
 			<p class="secondary">
@@ -29,13 +33,13 @@
 				С начала 1990-х годов, дом находился в аварийном состоянии, был трижды включён в список «100 главных зданий мира, которым грозит уничтожение»
 			</p>
 			<img src="img/narc.jpg">
-			<h2>
+			<h2 id="2">
 				История создания дома Наркомфина
 			</h2>
 			<p>
 				Из всех различных индивидуумов и групп, занимавшихся реформированием повседневной жизни и консолидации социализма в 1920-е годы архитекторы занимали исключительное положение. Архитектурная инновация Дома Коммуны представляет наиболее полную попытку осуществления реформирования быта и консолидации советского социализма.
 			</p>
-			<h2>
+			<h2 id="3">
 				Идеология
 			</h2>
 			<p>
@@ -71,5 +75,19 @@
 				</li>
 			</ul> -->
 		</article>
+		<script type="text/javascript">
+			$(function() { 
+				$('.sidebar a').each(function() { 
+					$(this).on('click', function(e) { 
+						e.preventDefault(); 
+						var scrollTo = $(this).attr('href'); 
+						var whitespace = scrollTo == '#1' ? 80 : 30;
+						$('html,body').animate({ 
+							scrollTop: $(scrollTo).offset().top - whitespace 
+						}, 500);
+					}); 
+				});
+			});
+		</script>
 	</body>
 </html>
