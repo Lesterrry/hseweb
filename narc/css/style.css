@@ -1,5 +1,5 @@
 body {
-	font-family: Raleway, sans-serif;
+	font-family: "PT Sans", sans-serif;
 }
 
 /* ARTICLE */
@@ -33,6 +33,9 @@ article p, article li, article blockquote {
 article p + p {
 	margin-top: 18px;
 }
+article blockquote + p {
+	margin-top: 18px;
+}
 article p.secondary {
 	font-size: 15px;
 	color: #7A7A7A;
@@ -41,6 +44,12 @@ article p.secondary {
 article ul {
 	margin-top: 18px;
 	list-style-type: disc;
+}
+article ol {
+	margin-top: 18px;
+	list-style-type: disc;
+	list-style-type: decimal;
+	margin-left: 32px;
 }
 article blockquote {
 	font-style: italic;
