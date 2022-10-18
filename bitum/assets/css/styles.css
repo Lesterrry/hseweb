@@ -1,0 +1,572 @@
+html {
+}
+
+body {
+  background: #141414;
+  font-family: 'Bitum';
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+  font-size: initial;
+  margin: 0;
+}
+
+.empty-placeholder-container {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-placeholder-container img {
+  width: 3000px;
+}
+
+.car-letter {
+  font-size: 200px;
+  color: #3F94F9;
+  position: absolute;
+  font-weight: 600;
+}
+
+.title-letters-array h1 {
+  font-size: 200px;
+}
+
+.parked-letters-array h1 {
+  font-size: 170px;
+}
+
+.author-sign h1, .author-sign h2 {
+  position: relative;
+  text-align: center;
+}
+
+.author-sign h1 {
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.author-sign h1 + h2 {
+  margin-top: 34px;
+}
+
+.author-sign h2 {
+  margin-top: 16px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 31px;
+}
+
+.author-sign {
+  top: 936px;
+  left: calc(50% + 34px);
+  height: 202px;
+  position: absolute;
+  width: 309px;
+  color: white;
+}
+
+.parked-letters-array {
+  position: absolute;
+  top: 1265px;
+  left: calc(50% - 102px);
+  height: 410px;
+  position: absolute;
+  width: calc(50% + 102px);
+  color: black;
+  overflow: hidden;
+}
+
+.parked-letters-array h1 {
+  position: absolute;
+}
+
+.description-sign {
+  top: 1730px;
+  left: calc(50% - 212px);
+  height: 325px;
+  position: absolute;
+  width: 624px;
+  color: black;
+}
+
+.description-sign h1 {
+  color: black;
+  position: relative;
+  text-align: center;
+  margin-top: 26px;
+  font-size: 26px;
+  letter-spacing: 0.26em;
+  font-weight: 500;
+}
+
+.face-specs > div {
+  margin-left: 0;
+  height: 325px;
+  position: absolute;
+  width: 100%;
+  color: black;
+}
+
+.face-specs-text-container h1 {
+  color: #FFE661;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.face-specs-text-container p {
+  color: white;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.face-specs-regular {
+  top: 2151px;
+}
+
+.face-specs-overview-container {
+  width: 332px;
+  height: 110px;
+}
+
+.face-specs-overview-container h1 {
+  position: absolute;
+  color: white;
+}
+
+.plate {
+  position: absolute;
+  width: 408px;
+  height: 236px;
+}
+
+.face-specs-text-container {
+  width: 310px;
+  position: absolute;
+  top: 26px;
+}
+
+.face-specs-overview-container h1 + h1 {
+  top: 60px;
+  left: 20px;
+}
+
+.face-specs-overview-container h1 {
+  font-size: 36px;
+  left: 16px;
+  top: 7px;
+  letter-spacing: 0.85em;
+}
+
+.face-specs-regular .face-specs-overview-container {
+  position: absolute;
+  left: calc(50% - 405px);
+  top: 170px;
+}
+
+.face-specs-regular .face-specs-overview-container h1 + h1 {
+  letter-spacing: 35px;
+}
+
+.face-specs-regular .face-specs-overview-container h1 {
+  font-weight: 400;
+}
+
+.face-specs-regular .face-specs-text-container {
+  left: calc(50% - 405px);
+}
+
+.face-specs-regular .plate {
+  top: 40px;
+  left: calc(50% - 12px);
+  transform: rotate(-7deg);
+}
+
+.plate h1, .plate h2 {
+  text-align: center;
+  position: relative;
+}
+
+.plate h1 + h2 {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.plate h2 {
+  margin-top: 20px;
+  letter-spacing: 0.4em;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.plate h1 {
+  font-size: 94px;
+  letter-spacing: 0.1em;
+  margin-top: 15px;
+}
+
+.face-specs-bold {
+  top: 2570px;
+}
+
+.face-specs-bold .face-specs-overview-container {
+  position: absolute;
+  left: calc(50% + 75px);
+  top: 170px;
+  width: 332px;
+  height: 110px;
+}
+
+.face-specs-bold .face-specs-overview-container h1 + h1 {
+  letter-spacing: 36px;
+}
+
+.face-specs-bold .face-specs-overview-container h1 {
+  font-weight: 700;
+}
+
+.face-specs-bold .face-specs-text-container {
+  left: calc(50% + 72px);
+}
+
+.face-specs-bold .plate {
+  top: 40px;
+  left: calc(50% - 390px);
+  transform: rotate(7deg);
+}
+
+.face-specs-light {
+  top: 2990px;
+}
+
+.face-specs-light .face-specs-overview-container {
+  position: absolute;
+  left: calc(50% - 405px);
+  top: 170px;
+}
+
+.face-specs-light .face-specs-overview-container h1 + h1 {
+  letter-spacing: 1.03em;
+}
+
+.face-specs-light .face-specs-overview-container h1 {
+  font-weight: 300;
+  letter-spacing: 0.88em;
+}
+
+.face-specs-light .face-specs-text-container {
+  left: calc(50% - 405px);
+}
+
+.face-specs-light .plate {
+  top: 40px;
+  left: 50%;
+  transform: rotate(-2deg);
+}
+
+.face-specs-italic {
+  top: 3215px;
+}
+
+.face-specs-italic .face-specs-overview-container {
+  position: absolute;
+  left: calc(50% + 60px);
+  top: 170px;
+}
+
+.face-specs-italic .face-specs-overview-container h1 + h1 {
+  letter-spacing: 37px;
+}
+
+.face-specs-italic .face-specs-overview-container h1 {
+  font-weight: 300;
+  letter-spacing: 0.9em;
+}
+
+.face-specs-italic .face-specs-text-container {
+  left: calc(50% - 405px);
+  top: 170px;
+}
+
+.face-specs-italic .plate {
+  top: 320px;
+  left: calc(50% - 200px);
+  font-style: italic;
+  color: white;
+}
+
+.glyph-specs-sign {
+  top: 3844px;
+  left: calc(50% - 52px);
+  height: 772px;
+  position: absolute;
+  width: 468px;
+  color: black;
+}
+
+.glyph-specs-sign > h1 {
+  text-align: center;
+  margin-top: 116px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.glyph-specs-sign div {
+  position: relative;
+  height: 140px;
+  width: 366px;
+  margin-left: 48px;
+}
+
+.glyph-specs-sign div + div {
+  margin-top: 64px;
+}
+
+.glyph-specs-sign div + div + div {
+  margin-top: 68px;
+}
+
+.glyph-specs-sign div > h1 {
+  font-size: 28px;
+  bottom: 44px;
+  position: absolute;
+}
+
+.glyph-specs-sign div > h2 {
+  position: absolute;
+  bottom: 2.5px;
+  margin-bottom: 0;
+  margin-left: 80px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.license-container {
+  position: absolute;
+  width: 100%;
+  height: 290px;
+  top: 4750px;
+}
+
+.license-container > p {
+  width: 260px;
+  color: white;
+  margin-left: calc(50% - 360px);
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.license-container > div {
+  position: absolute;
+  height: 256px;
+  width: 450px;
+  left: calc(50% - 36px);
+  top: 14px;
+  transform: rotate(-4deg);
+  color: white;
+}
+
+.license-container div > h1 {
+  position: relative;
+  margin-top: 16px;
+  margin-left: 40px;
+  font-size: 24px;
+}
+
+.license-container div > div {
+  position: relative;
+  margin-left: 191px;
+  width: 237px;
+  height: 45px;
+  margin-top: 13px;
+}
+
+.license-container div > div + div {
+  margin-top: 0;
+}
+
+.license-container > div > div > p {
+  position: absolute;
+  font-size: 16px;
+}
+
+.license-container p.index {
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  width: 30px;
+}
+
+.license-container p.en {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-weight: 400;
+  width: calc(100% - 30px);
+}
+
+.license-container p.ru {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-weight: 300;
+  width: calc(100% - 30px);
+}
+
+.direction-sign {
+  position: absolute;
+  width: 690px;
+  height: 345px;
+  top: 5080px;
+  left: calc(50% - 345px);
+  color: white;
+}
+
+.direction-sign h1 {
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+}
+
+.carplay {
+  position: absolute;
+  width: 250px;
+  top: 5985px;
+  left: calc(50% - 188px);
+  color: white;
+  text-align: center;
+}
+
+.carplay h1 {
+  font-size: 26px;
+}
+
+.carplay h2 {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.carplay h3 {
+  font-size: 12px;
+  color: #3f94f9;
+  margin-top: 6px;
+}
+
+.keeper {
+  position: absolute;
+  width: 150px;
+  top: 6575px;
+  left: calc(50% - 90px);
+  color: black;
+  text-align: center;
+  transform: rotate(5deg);
+}
+
+.keeper h1 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.keeper h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.list {
+  position: absolute;
+  height: 800px;
+  top: 6780px;
+  width: 100%;
+}
+
+.strip {
+  position: absolute;
+  width: 1040px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.strip h1 {
+  font-size: 20px;
+}
+
+.rightstick {
+  right: 0;
+  position: absolute;
+  color: #979797;
+}
+
+.leftstick {
+  left: 0;
+  position: absolute;
+  color: #979797;
+}
+
+.centerstick {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #ffe661;
+}
+
+.example {
+  position: relative;
+  margin: 25px 50px;
+  text-align: center;
+}
+
+.example h1 {
+  position: relative;
+  color: white;
+  font-size: 64px;
+}
+
+.example h2 {
+  position: relative;
+  color: #979797;
+  font-size: 20px;
+}
+
+.buy-button {
+  position: absolute;
+  background: white;
+  width: 250px;
+  height: 56px;
+  top: 7630px;
+  left: calc(50% - 20px);
+  border-color: white;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px;
+  padding-right: 24px;
+  padding-left: 28px;
+  transition: all .2s linear;
+}
+
+.buy-button:hover {
+  background-color: #c0c0c0;
+}
+
+.buy-button h1 {
+  font-size: 20px;
+}
+
+.buy-button img {
+  width: 35px;
+}
+
+.footer {
+  position: absolute;
+}
+
