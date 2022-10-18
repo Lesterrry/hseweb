@@ -36,8 +36,29 @@ h1, h2, h3, p {
   font-size: 200px;
 }
 
+.parked-letters-array {
+  position: absolute;
+  top: 1271px;
+  left: calc(50% - 102px);
+  height: 410px;
+  position: absolute;
+  width: calc(50% + 102px);
+  color: black;
+  overflow: hidden;
+}
+
 .parked-letters-array h1 {
   font-size: 170px;
+  position: absolute;
+}
+
+.author-sign {
+  top: 942px;
+  left: calc(50% + 42px);
+  height: 202px;
+  position: absolute;
+  width: 309px;
+  color: white;
 }
 
 .author-sign h1, .author-sign h2 {
@@ -62,32 +83,8 @@ h1, h2, h3, p {
   line-height: 31px;
 }
 
-.author-sign {
-  top: 936px;
-  left: calc(50% + 34px);
-  height: 202px;
-  position: absolute;
-  width: 309px;
-  color: white;
-}
-
-.parked-letters-array {
-  position: absolute;
-  top: 1265px;
-  left: calc(50% - 102px);
-  height: 410px;
-  position: absolute;
-  width: calc(50% + 102px);
-  color: black;
-  overflow: hidden;
-}
-
-.parked-letters-array h1 {
-  position: absolute;
-}
-
 .description-sign {
-  top: 1730px;
+  top: 1736px;
   left: calc(50% - 212px);
   height: 325px;
   position: absolute;
@@ -126,7 +123,7 @@ h1, h2, h3, p {
 }
 
 .face-specs-regular {
-  top: 2151px;
+  top: 2157px;
 }
 
 .face-specs-overview-container {
@@ -211,7 +208,7 @@ h1, h2, h3, p {
 }
 
 .face-specs-bold {
-  top: 2570px;
+  top: 2576px;
 }
 
 .face-specs-bold .face-specs-overview-container {
@@ -241,7 +238,7 @@ h1, h2, h3, p {
 }
 
 .face-specs-light {
-  top: 2990px;
+  top: 2996px;
 }
 
 .face-specs-light .face-specs-overview-container {
@@ -270,7 +267,7 @@ h1, h2, h3, p {
 }
 
 .face-specs-italic {
-  top: 3215px;
+  top: 3221px;
 }
 
 .face-specs-italic .face-specs-overview-container {
@@ -301,8 +298,8 @@ h1, h2, h3, p {
 }
 
 .glyph-specs-sign {
-  top: 3844px;
-  left: calc(50% - 52px);
+  top: 3850px;
+  left: calc(50% - 44px);
   height: 772px;
   position: absolute;
   width: 468px;
@@ -335,6 +332,7 @@ h1, h2, h3, p {
   font-size: 28px;
   bottom: 44px;
   position: absolute;
+  font-weight: 400;
 }
 
 .glyph-specs-sign div > h2 {
@@ -350,7 +348,7 @@ h1, h2, h3, p {
   position: absolute;
   width: 100%;
   height: 290px;
-  top: 4750px;
+  top: 4756px;
 }
 
 .license-container > p {
@@ -377,6 +375,7 @@ h1, h2, h3, p {
   margin-top: 16px;
   margin-left: 40px;
   font-size: 24px;
+  font-weight: 400;
 }
 
 .license-container div > div {
@@ -423,8 +422,8 @@ h1, h2, h3, p {
   position: absolute;
   width: 690px;
   height: 345px;
-  top: 5080px;
-  left: calc(50% - 345px);
+  top: 5086px;
+  left: calc(50% - 338px);
   color: white;
 }
 
@@ -437,32 +436,35 @@ h1, h2, h3, p {
 .carplay {
   position: absolute;
   width: 250px;
-  top: 5985px;
-  left: calc(50% - 188px);
+  top: 5991px;
+  left: calc(50% - 178px);
   color: white;
   text-align: center;
 }
 
 .carplay h1 {
   font-size: 26px;
+  font-weight: 400;
 }
 
 .carplay h2 {
   margin-top: 6px;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .carplay h3 {
   font-size: 12px;
   color: #3f94f9;
   margin-top: 6px;
+  font-weight: 400;
 }
 
 .keeper {
   position: absolute;
   width: 150px;
-  top: 6575px;
-  left: calc(50% - 90px);
+  top: 6581px;
+  left: calc(50% - 82px);
   color: black;
   text-align: center;
   transform: rotate(5deg);
@@ -497,6 +499,7 @@ h1, h2, h3, p {
 
 .strip h1 {
   font-size: 20px;
+  font-weight: 400;
 }
 
 .rightstick {
@@ -534,14 +537,15 @@ h1, h2, h3, p {
   position: relative;
   color: #979797;
   font-size: 20px;
+  font-weight: 400;
 }
 
 .buy-button {
   position: absolute;
   background: white;
-  width: 250px;
-  height: 56px;
-  top: 7630px;
+  width: 210px;
+  height: 34px;
+  top: 7638px;
   left: calc(50% - 20px);
   border-color: white;
   border-radius: 14px;
@@ -549,8 +553,8 @@ h1, h2, h3, p {
   justify-content: space-between;
   align-items: center;
   padding: 11px;
-  padding-right: 24px;
-  padding-left: 28px;
+  padding-right: 46px;
+  padding-left: 46px;
   transition: all .2s linear;
 }
 
@@ -559,11 +563,12 @@ h1, h2, h3, p {
 }
 
 .buy-button h1 {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .buy-button img {
-  width: 35px;
+  width: 34px;
 }
 
 .footer {
