@@ -1,11 +1,19 @@
-html {
-}
+/*************************
+Handcrafted by Aydar N.
+2022
+
+me@aydar.media
+
+*************************/
 
 body {
+  text-align: left;
+  margin: 0;
   background: #141414;
   font-family: 'Bitum';
   width: 100%;
   overflow-x: hidden;
+  margin-bottom: 32px;
 }
 
 h1, h2, h3, p {
@@ -19,6 +27,7 @@ h1, h2, h3, p {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.10;
 }
 
 .empty-placeholder-container img {
@@ -36,29 +45,8 @@ h1, h2, h3, p {
   font-size: 200px;
 }
 
-.parked-letters-array {
-  position: absolute;
-  top: 1271px;
-  left: calc(50% - 102px);
-  height: 410px;
-  position: absolute;
-  width: calc(50% + 102px);
-  color: black;
-  overflow: hidden;
-}
-
 .parked-letters-array h1 {
   font-size: 170px;
-  position: absolute;
-}
-
-.author-sign {
-  top: 942px;
-  left: calc(50% + 42px);
-  height: 202px;
-  position: absolute;
-  width: 309px;
-  color: white;
 }
 
 .author-sign h1, .author-sign h2 {
@@ -83,31 +71,73 @@ h1, h2, h3, p {
   line-height: 31px;
 }
 
+.author-sign {
+  top: 936px;
+  left: calc(50% + 34px);
+  height: 202px;
+  position: absolute;
+  width: 309px;
+  color: white;
+}
+
+.parked-letters-array {
+  position: absolute;
+  top: 1265px;
+  left: calc(50% - 102px);
+  height: 410px;
+  position: absolute;
+  width: calc(50% + 102px);
+  color: black;
+  overflow: hidden;
+}
+
+.parked-letters-array h1 {
+  position: absolute;
+}
+
 .description-sign {
-  top: 1736px;
+  width: 100%;
+  height: 420px;
+  position: relative;
+  margin-top: 24px;
+}
+
+.description-sign .sign {
+  top: 30px;
   left: calc(50% - 212px);
   height: 325px;
   position: absolute;
   width: 624px;
   color: black;
+  padding: 28px;
 }
 
-.description-sign h1 {
-  color: black;
+.description-sign .sign h2 {
+  position: relative;
+  margin-top: 26px;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.description-sign .sign h1 {
   position: relative;
   text-align: center;
-  margin-top: 26px;
   font-size: 26px;
   letter-spacing: 0.26em;
   font-weight: 500;
 }
 
+.face-specs .face-specs-italic {
+  height: 420px;
+}
+
 .face-specs > div {
   margin-left: 0;
   height: 325px;
-  position: absolute;
+  position: relative;
   width: 100%;
-  color: black;
+  margin-top: 40px;
 }
 
 .face-specs-text-container h1 {
@@ -120,10 +150,6 @@ h1, h2, h3, p {
   color: white;
   font-weight: 300;
   margin-top: 10px;
-}
-
-.face-specs-regular {
-  top: 2157px;
 }
 
 .face-specs-overview-container {
@@ -207,10 +233,6 @@ h1, h2, h3, p {
   margin-top: 15px;
 }
 
-.face-specs-bold {
-  top: 2576px;
-}
-
 .face-specs-bold .face-specs-overview-container {
   position: absolute;
   left: calc(50% + 75px);
@@ -235,10 +257,6 @@ h1, h2, h3, p {
   top: 40px;
   left: calc(50% - 390px);
   transform: rotate(7deg);
-}
-
-.face-specs-light {
-  top: 2996px;
 }
 
 .face-specs-light .face-specs-overview-container {
@@ -266,14 +284,10 @@ h1, h2, h3, p {
   transform: rotate(-2deg);
 }
 
-.face-specs-italic {
-  top: 3221px;
-}
-
 .face-specs-italic .face-specs-overview-container {
   position: absolute;
   left: calc(50% + 60px);
-  top: 170px;
+  top: 20px;
 }
 
 .face-specs-italic .face-specs-overview-container h1 + h1 {
@@ -287,23 +301,13 @@ h1, h2, h3, p {
 
 .face-specs-italic .face-specs-text-container {
   left: calc(50% - 405px);
-  top: 170px;
 }
 
 .face-specs-italic .plate {
-  top: 320px;
+  top: 176px;
   left: calc(50% - 200px);
   font-style: italic;
   color: white;
-}
-
-.glyph-specs-sign {
-  top: 3850px;
-  left: calc(50% - 44px);
-  height: 772px;
-  position: absolute;
-  width: 468px;
-  color: black;
 }
 
 .glyph-specs-sign > h1 {
@@ -313,42 +317,46 @@ h1, h2, h3, p {
   font-weight: 400;
 }
 
-.glyph-specs-sign div {
-  position: relative;
-  height: 140px;
-  width: 366px;
-  margin-left: 48px;
-}
-
-.glyph-specs-sign div + div {
-  margin-top: 64px;
+.glyph-specs-sign > div {
+  position: absolute;
+  height: 772px;
+  width: 468px;
+  top: 0;
+  left: calc(50% - 70px);
+  color: black;
 }
 
 .glyph-specs-sign div + div + div {
   margin-top: 68px;
 }
 
-.glyph-specs-sign div > h1 {
+.glyph-specs-sign .sign div > h1 {
   font-size: 28px;
-  bottom: 44px;
   position: absolute;
-  font-weight: 400;
+  text-align: left;
+  margin-left: 49px;
+  bottom: 38px;
 }
 
-.glyph-specs-sign div > h2 {
+.glyph-specs-sign .sign > h1 {
+  font-size: 28px;
+  position: relative;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.glyph-specs-sign .sign div > h2 {
   position: absolute;
-  bottom: 2.5px;
-  margin-bottom: 0;
-  margin-left: 80px;
+  left: 125px;
   font-size: 18px;
   font-weight: 400;
+  bottom: 0;
 }
 
 .license-container {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 290px;
-  top: 4756px;
 }
 
 .license-container > p {
@@ -375,7 +383,6 @@ h1, h2, h3, p {
   margin-top: 16px;
   margin-left: 40px;
   font-size: 24px;
-  font-weight: 400;
 }
 
 .license-container div > div {
@@ -418,12 +425,12 @@ h1, h2, h3, p {
   width: calc(100% - 30px);
 }
 
-.direction-sign {
+.direction-sign .sign {
   position: absolute;
   width: 690px;
   height: 345px;
-  top: 5086px;
-  left: calc(50% - 338px);
+  top: 24px;
+  left: calc(50% - 345px);
   color: white;
 }
 
@@ -433,38 +440,35 @@ h1, h2, h3, p {
   position: absolute;
 }
 
-.carplay {
+.carplay-text {
   position: absolute;
   width: 250px;
-  top: 5991px;
-  left: calc(50% - 178px);
+  top: 74px;
+  left: calc(50% - 187px);
   color: white;
   text-align: center;
 }
 
-.carplay h1 {
+.carplay-text h1 {
   font-size: 26px;
-  font-weight: 400;
 }
 
-.carplay h2 {
+.carplay-text h2 {
   margin-top: 6px;
   font-size: 16px;
-  font-weight: 400;
 }
 
-.carplay h3 {
+.carplay-text h3 {
   font-size: 12px;
   color: #3f94f9;
   margin-top: 6px;
-  font-weight: 400;
 }
 
-.keeper {
+.keeper div {
   position: absolute;
   width: 150px;
-  top: 6581px;
-  left: calc(50% - 82px);
+  top: 267px;
+  left: calc(50% - 84px);
   color: black;
   text-align: center;
   transform: rotate(5deg);
@@ -481,25 +485,24 @@ h1, h2, h3, p {
 }
 
 .list {
-  position: absolute;
+  position: relative;
   height: 800px;
-  top: 6780px;
   width: 100%;
 }
 
 .strip {
-  position: absolute;
+  position: relative;
   width: 1040px;
-  height: 40px;
+  height: 24px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  margin-top: 24px;
 }
 
 .strip h1 {
   font-size: 20px;
-  font-weight: 400;
 }
 
 .rightstick {
@@ -527,6 +530,17 @@ h1, h2, h3, p {
   text-align: center;
 }
 
+.example input {
+  position: relative;
+  color: white;
+  font-size: 64px;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  border: none;
+  height: 80px;
+}
+
 .example h1 {
   position: relative;
   color: white;
@@ -537,41 +551,178 @@ h1, h2, h3, p {
   position: relative;
   color: #979797;
   font-size: 20px;
-  font-weight: 400;
 }
 
 .buy-button {
   position: absolute;
   background: white;
-  width: 210px;
-  height: 34px;
-  top: 7638px;
-  left: calc(50% - 20px);
+  width: 250px;
+  height: 56px;
+  top: 20px;
+  left: calc(50% + 20px);
   border-color: white;
   border-radius: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 11px;
-  padding-right: 46px;
-  padding-left: 46px;
+  padding-right: 29px;
+  padding-left: 30px;
   transition: all .2s linear;
 }
 
 .buy-button:hover {
-  background-color: #c0c0c0;
+  filter: invert(85%);
 }
 
 .buy-button h1 {
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 20px;
 }
 
 .buy-button img {
-  width: 34px;
+  width: 30px;
+  filter: invert(0%);
 }
 
 .footer {
   position: absolute;
+}
+
+.title-letters-array {
+  height: 1682px;
+  width: 100%;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  width: 3013px;
+  left: calc(50% - 1501px);
+  z-index: 1;
+}
+
+.background-full {
+  position: absolute;
+  width: 3013px;
+  left: calc(50% - 1501px);
+  z-index: 1;
+  top: 0;
+}
+
+.background-partial {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+div, h1, h2, h3 {
+  z-index: 2;
+}
+
+sign h2 {
+}
+
+body > div {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.face-specs {
+  position: relative;
+  height: 1563px;
+  width: 100%;
+}
+
+.glyph-specs-sign {
+  margin-top: 48px;
+  position: relative;
+  width: 100%;
+  height: 960px;
+}
+
+.glyph-specs-sign > div > div {
+  position: relative;
+}
+
+.glyph-specs-sign > div .a {
+  margin-top: 65px;
+  height: 69px;
+}
+
+.glyph-specs-sign > div .m {
+  margin-top: 148px;
+  height: 60px;
+}
+
+.glyph-specs-sign > div .s {
+  margin-top: 143px;
+  height: 60px;
+}
+
+.direction-sign {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.carplay {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: 380px;
+}
+
+.carplay > div {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 312px);
+  width: 612px;
+  height: 344px;
+}
+
+.goods {
+  position: relative;
+  width: 100%;
+  height: 261px;
+  margin-top: 50px;
+}
+
+.keeper {
+  position: relative;
+  width: 100%;
+  height: 416px;
+  margin-top: 54px;
+}
+
+.buy-road {
+  position: relative;
+  width: 100%;
+  height: 204px;
+  margin-top: 80px;
+}
+
+.header {
+  margin-top: 80px;
+}
+
+a {
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+a:hover {
+  color: #B6A444;
+}
+
+.buy-button a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 4;
 }
 
