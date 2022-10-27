@@ -501,7 +501,7 @@ h1, h2, h3, p {
   margin-top: 24px;
 }
 
-.strip h1 {
+.strip h1, a {
   font-size: 20px;
 }
 
