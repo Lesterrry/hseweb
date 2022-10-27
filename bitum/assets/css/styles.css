@@ -109,7 +109,7 @@ h1, h2, h3, p {
   position: absolute;
   width: 624px;
   color: black;
-  padding: 28px;
+  padding: 25px;
 }
 
 .description-sign .sign h2 {
@@ -493,7 +493,7 @@ h1, h2, h3, p {
 .strip {
   position: relative;
   width: 1040px;
-  height: 24px;
+  height: 26px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
