@@ -47,3 +47,31 @@ me@aydar.media
 		width: 180px;
 	}
 }
+
+/* iPhones */
+@media all and (max-width: 1200px) and (-webkit-device-pixel-ratio: 3) {
+	article {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 20px;
+	}
+	article img {
+		margin-left: -10;
+	}
+	.menubar img {
+		width: 180px;
+	}
+}
+@media all and (max-width: 800px) and (-webkit-device-pixel-ratio: 2) {
+	article {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 20px;
+	}
+	article img {
+		margin-left: -10;
+	}
+	.menubar img {
+		width: 180px;
+	}
+}
