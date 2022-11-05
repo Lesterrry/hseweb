@@ -11,11 +11,10 @@ me@aydar.media
 		<meta charset="utf-8"/>
 		<title>Дом Наркомфина</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script src="js/jq.js" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="menubar">
-			<a href="index.html"><img src="img/logo.svg" width="250"></a>
+			<a href="index.html"><img src="img/logo.svg"></a>
 			<a href="about.html">О проекте</a>
 		</div>
 		<nav class="sidebar">
@@ -158,19 +157,5 @@ me@aydar.media
 				Сдача дома Наркомфина (1930) по времени совпала с критическим переломом в судьбе архитектуры в СССР: все профессиональные объединения были распущены, а вместо них возник Союз архитекторов СССР, призванный определять облик новой советской архитектуры. Конструктивизм и рационализм были заклеймены как „формализм“ и иностранные заимствования, чуждые советскому человеку. В архитектуре был объявлен курс на «освоение классического наследия». Новое градостроительство с 1931 года было ориентировано на создание монументальных городских центров и рассматривало в качестве достойной обсуждения жилой архитектуры только декорировавшие эти центры отдельные дома. В 1932 году дом Наркомфина был подвергнут резкой критике в печати после чего упоминания о „доме работников Наркомфина“ исчезают из публичного пространства и появляются лишь спустя четыре десятилетия.
 			</p>
 		</article>
-		<script type="text/javascript">
-			$(function() { 
-				$('.sidebar a').each(function() { 
-					$(this).on('click', function(e) { 
-						e.preventDefault(); 
-						var scrollTo = $(this).attr('href'); 
-						var whitespace = scrollTo == '#1' ? 160 : 30;
-						$('html,body').animate({ 
-							scrollTop: $(scrollTo).offset().top - whitespace 
-						}, 500);
-					}); 
-				});
-			});
-		</script>
 	</body>
 </html>

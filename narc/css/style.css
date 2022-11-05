@@ -12,8 +12,8 @@ body {
 
 /* ARTICLE */
 article {
-	margin-left: 256px;
-	margin-right: 256px;
+	margin-left: 320px;
+	margin-right: 320px;
 	margin-top: 80px;
 	margin-bottom: 80px;
 }
@@ -136,6 +136,9 @@ article img {
 	font-size: 17px;
 	color: #7A7A7A;
 	transition: all .2s linear;
+}
+.menubar img {
+	width: 250px;
 }
 .menubar a:hover {
 	color: #000;

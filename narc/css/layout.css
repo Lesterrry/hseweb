@@ -6,8 +6,44 @@ me@aydar.media
 
 *************************/
 
-@media all and (max-width: 1340px) {
+@media all and (max-width: 1240px) {
 	.sidebar {
 		display: none;
+	}
+	article {
+		margin-left: 250px;
+		margin-right: 250px;
+	}
+}
+@media all and (max-width: 1100px) {
+	article {
+		margin-left: 180px;
+		margin-right: 180px;
+	}
+	article img {
+		width: 100vw;
+		margin-left: -180;
+	}
+}
+@media all and (max-width: 800px) {
+	article {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+	article img {
+		margin-left: -80;
+	}
+}
+@media all and (max-width: 600px) {
+	article {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 20px;
+	}
+	article img {
+		margin-left: -10;
+	}
+	.menubar img {
+		width: 180px;
 	}
 }
