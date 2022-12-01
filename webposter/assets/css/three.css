@@ -1,0 +1,95 @@
+.model-container .three {
+  margin: 60px auto;
+  width: 1098px;
+  height: 1098px;
+  position: relative;
+}
+
+.three .model {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.three .gradient {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(black 14%, #ffffff00 100%);
+}
+
+@keyframes rotate-cw {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-ccw {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.round {
+  position: absolute;
+  z-index: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.round#a, .round#b, .round#e, .round#g {
+  animation-name: rotate-cw;
+}
+
+.round#c, .round#f {
+  animation-name: rotate-ccw;
+}
+
+.round#a {
+  width: 100%;
+  animation-duration: 18s;
+}
+
+.round#b {
+  width: 86%;
+  top: calc(50% - 43%);
+  left: calc(50% - 43%);
+  animation-duration: 12s;
+}
+
+.round#c {
+  width: 72%;
+  top: calc(50% - 36%);
+  left: calc(50% - 36%);
+  animation-duration: 24s;
+}
+
+.round#e {
+  width: 58%;
+  top: calc(50% - 29%);
+  left: calc(50% - 29%);
+  animation-duration: 8s;
+}
+
+.round#f {
+  width: 45%;
+  top: calc(50% - 22.5%);
+  left: calc(50% - 22.5%);
+  animation-duration: 10s;
+}
+
+.round#g {
+  width: 33%;
+  top: calc(50% - 16.5%);
+  left: calc(50% - 16.5%);
+  animation-duration: 5s;
+}
+

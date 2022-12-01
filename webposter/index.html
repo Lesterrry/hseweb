@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,  shrink-to-fit=no">
+	<title>Skip Web JS</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:200,400,500&amp;display=swap">
+	<link rel="stylesheet" href="assets/css/Skip%20Display.css">
+	<link rel="stylesheet" href="assets/css/overrides.css">
+	<link rel="stylesheet" href="assets/css/snowfall.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/three.css">
+</head>
+
+<body>
+	<div>
+		<lottie-player class="logo-big" src="https://lottie.host/89b576cb-b51d-4a13-8d40-175801fe6387/NmyACTwtSb.json" loop autoplay></lottie-player>
+	</div>
+	<div class="description">
+		<div>
+			<h1><span class="fontswap">ВРЕМЯ</span>&nbsp;<span>НА</span>&nbsp;<span>ТВОЕЙ</span>&nbsp;<span>СТОРОНЕ</span></h1>
+			<p>Скип – компания, производящая устройства, которые позволяют управлять течением времени:&nbsp;<span id="skip" class="enforce">пропускать&nbsp;</span>фрагменты,&nbsp;<span id="speedup" class="enforce">ускорять&nbsp;</span><br>скучное,&nbsp;<span id="slowdown" class="enforce">замедлять&nbsp;</span>и&nbsp;<span id="repeat" class="enforce">повторять&nbsp;</span>интересное</p>
+			<div></div>
+		</div>
+	</div>
+	<div class="snowfall">
+		<div id="lo1" class="snowflake a">
+			<h1>ДОЛГО</h1>
+		</div>
+		<div id="lo2" class="snowflake b">
+			<h1>ДОЛГО</h1>
+		</div>
+		<div id="ye1" class="snowflake c">
+			<h1>ВЧЕРА</h1>
+		</div>
+		<div id="ye2" class="snowflake d">
+			<h1>ВЧЕРА</h1>
+		</div>
+		<div id="to1" class="snowflake e">
+			<h1>СЕГОДНЯ</h1>
+		</div>
+		<div id="to2" class="snowflake f">
+			<h1>СЕГОДНЯ</h1>
+		</div>
+		<div id="sk1" class="snowflake g">
+			<h1>СКИП</h1>
+		</div>
+		<div id="sk2" class="snowflake h">
+			<h1>СКИП</h1>
+		</div>
+		<div id="sk3" class="snowflake a">
+			<h1>СКИП</h1>
+		</div>
+		<div id="th1" class="snowflake b">
+			<h1>ТОГДА</h1>
+		</div>
+		<div id="th2" class="snowflake c">
+			<h1>ТОГДА</h1>
+		</div>
+		<div id="tm1" class="snowflake d">
+			<h1>ЗАВТРА</h1>
+		</div>
+		<div id="tm2" class="snowflake e">
+			<h1>ЗАВТРА</h1>
+		</div>
+		<div id="no1" class="snowflake f">
+			<h1>СЕЙЧАС</h1>
+		</div>
+		<div id="no2" class="snowflake g">
+			<h1>СЕЙЧАС</h1>
+		</div>
+		<div id="fa1" class="snowflake h">
+			<h1>БЫСТРО</h1>
+		</div>
+		<div id="fa2" class="snowflake a">
+			<h1>БЫСТРО</h1>
+		</div>
+		<div id="sp1" class="snowflake b">
+			<h1>ПРОПУСК</h1>
+		</div>
+		<div id="sp2" class="snowflake c">
+			<h1>ПРОПУСК</h1>
+		</div>
+		<div id="so1" class="snowflake d">
+			<h1>СКОРО</h1>
+		</div>
+		<div id="so2" class="snowflake e">
+			<h1>СКОРО</h1>
+		</div>
+		<div id="sl1" class="snowflake f">
+			<h1>ЗАМЕДЛИ</h1>
+		</div>
+		<div id="sl2" class="snowflake g">
+			<h1>ЗАМЕДЛИ</h1>
+		</div>
+		<div id="qu1" class="snowflake h">
+			<h1>ОЧЕРЕДЬ</h1>
+		</div>
+		<div id="qu2" class="snowflake a">
+			<h1>ОЧЕРЕДЬ</h1>
+		</div>
+		<div id="ja1" class="snowflake b">
+			<h1>ПРОБКИ</h1>
+		</div>
+		<div id="ja2" class="snowflake c">
+			<h1>ПРОБКИ</h1>
+		</div>
+		<div id="mi1" class="snowflake d">
+			<h1>МИНУТА</h1>
+		</div>
+		<div id="mi2" class="snowflake e">
+			<h1>МИНУТА</h1>
+		</div>
+	</div>
+	<div class="model-container">
+		<div class="title-container"><img src="assets/img/model.svg"><img src="assets/img/a.svg"></div>
+		<div class="three" id="three">
+			<div class="gradient"></div><img id="a" class="round" src="assets/img/round.svg"><img id="b" class="round" src="assets/img/round.svg"><img id="c" class="round" src="assets/img/round.svg"><img id="e" class="round" src="assets/img/round.svg"><img id="f" class="round" src="assets/img/round.svg"><img id="g" class="round" src="assets/img/round.svg">
+		</div>
+	</div>
+	<div class="bricks-parent">
+		<div id="a" class="bricks">
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+		</div>
+		<div id="b" class="bricks">
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+		</div>
+		<div id="c" class="bricks">
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+			<div class="brick"><img class="active" src="assets/img/path_block_active.svg"><img class="inactive" src="assets/img/path_block.svg"></div>
+		</div>
+	</div>
+	<div class="logo-small-container"><img class="logo-small" src="assets/img/logo_small.svg"><a href="https://aydar.media">aydar.media</a></div>
+	<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "./assets/js/three/build/three.module.js",
+				"three/addons/": "./assets/js/three/jsm/"
+			}
+		}
+	</script>
+	<script type="module">
+
+		import * as THREE from 'three';
+
+		import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+		import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+
+		let camera, scene, renderer, stats;
+
+		const clock = new THREE.Clock();
+
+		let mixer;
+
+		init();
+		animate();
+
+		function init() {
+
+			const parent = document.getElementById('three');
+			const container = document.createElement( 'div' );
+			container.className = "model";
+			parent.appendChild( container );
+
+			camera = new THREE.PerspectiveCamera( 45, parent.offsetWidth / parent.offsetHeight, 1, 2000 );
+			camera.position.set( 150, 150, 150 );
+
+			scene = new THREE.Scene();
+
+			const hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 20 );
+			hemiLight.position.set( 400, 400, 400 );
+			scene.add( hemiLight );
+
+			const dirLighta = new THREE.DirectionalLight( 0xffffff, 3 );
+			dirLighta.position.set( 0, 0, 50 );
+			scene.add( dirLighta );
+
+			const dirLightb = new THREE.DirectionalLight( 0xffffff, 2 );
+			dirLightb.position.set( 0, 0, -50 );
+			scene.add( dirLightb );
+
+			// model
+			const loader = new FBXLoader();
+			loader.load( 'assets/js/three/models/device.fbx', function ( object ) {
+
+				object.traverse( function ( child ) {
+
+					if ( child.isMesh ) {
+
+						child.castShadow = true;
+						child.receiveShadow = true;
+
+					}
+
+				} );
+
+				object.position.set( -30, -23, 0 );
+				scene.add( object );
+
+			} );
+
+			renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( parent.offsetWidth, parent.offsetHeight );
+			renderer.shadowMap.enabled = true;
+			renderer.setClearColor( 0x000000, 0 );
+			container.appendChild( renderer.domElement );
+
+			const controls = new OrbitControls( camera, renderer.domElement );
+			controls.target.set( 0, 0, 0 );
+			controls.update();
+			controls.enableRotate = false;
+			controls.enablePan = false;
+			controls.enableZoom = false;
+
+			document.body.addEventListener( 'mousemove', ( e )=>{
+				controls.handleMouseMoveRotate( e ) 
+			});
+
+			window.addEventListener( 'resize', onWindowResize );
+
+		}
+
+		function onWindowResize() {
+
+			const parent = document.getElementById('three');
+			camera.aspect = parent.offsetWidth / parent.offsetHeight;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize( parent.offsetWidth, parent.offsetHeight );
+
+		}
+
+		//
+
+		function animate() {
+
+			requestAnimationFrame( animate );
+
+			const delta = clock.getDelta();
+
+			if ( mixer ) mixer.update( delta );
+
+			renderer.render( scene, camera );
+
+		}
+
+	</script>
+	<script src="assets/js/lottie-player.min.js"></script>
+</body>
+
+</html>
