@@ -1,0 +1,86 @@
+/*************************
+Handcrafted by Aydar N.
+2022
+
+me@aydar.media
+
+*************************/
+
+@media all and (min-width: 2000px) {
+	body {
+		zoom: 1.5;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.model-container .three {
+		width: 800px;
+		height: 800px;
+	}
+	.model-container .title-container {
+		width: 800px;
+	}
+	.title-container img {
+		height: 18px;
+	}
+}
+
+@media all and (max-width: 900px) {
+	body {
+		zoom: 0.75;
+	}
+	.model-container .three {
+		width: 950px;
+		height: 950px;
+	}
+	.model-container .title-container {
+		width: 950px;
+	}
+	.title-container img {
+		height: 20px;
+	}
+}
+
+@media all and (max-width: 750px) {
+	/*.description > div {
+		width: 100%;
+	}*/
+	.model-container .title-container {
+		flex-flow: column;
+		gap: 20px;
+		justify-content: initial;
+		width: 100%;
+	}
+	.model-container .three {
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		height: auto;
+	}
+}
+
+@media all and (max-width: 650px) {
+	.description > div {
+		width: 100%;
+	}
+	.description .circle {
+		display: none;
+	}
+	.inline {
+		display: none;
+	}
+	.description p {
+		width: 100%;
+	}
+	.three .placeholder {
+		display: initial;
+	}
+	.three .model {
+		display: none;
+	}
+}
+
+@media all and (max-width: 350px) {
+	body {
+		zoom: 0.6;
+	}
+}

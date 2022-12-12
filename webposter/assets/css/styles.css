@@ -1,190 +1,233 @@
+/*************************
+Handcrafted by Aydar N.
+2022
+
+me@aydar.media
+
+*************************/
+
 body {
-  background-color: black;
+	background-color: black;
 }
 
 body > div {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .description {
-  margin-top: 60px;
+	margin-top: 60px;
+	overflow-x: hidden;
 }
 
 .description > div {
-  margin: 0 auto;
-  width: 846px;
+	margin: 0 auto;
+	width: 846px;
 }
 
 .description h1, .description p {
-  font-family: 'Inter';
-  color: white;
-  margin-bottom: 10px;
+	font-family: 'Inter';
+	color: white;
+	margin-bottom: 10px;
 }
 
 .description h1 {
-  width: 961px;
-  font-weight: 500;
-  font-size: 56px;
-  height: 65px;
+	width: 100%;
+	font-weight: 500;
+	font-size: 56px;
+	overflow-wrap: break-word;
 }
 
 .description .fontswap:hover {
-  font-family: 'Skip Display';
+	font-family: 'Skip Display';
 }
 
 .description p {
-  font-weight: 200;
-  font-size: 22px;
-  width: 60%;
+	font-weight: 200;
+	font-size: 22px;
+	width: 60%;
 }
 
 @keyframes timeline-cycle {
-  to {
-    background-position: -162px;
-  }
+	to {
+		background-position: -162px;
+	}
 }
 
-.description > div > div {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background: url('../../assets/img/timeline.svg') left center;
-  background-size: auto 100%;
-  top: 136px;
-  left: calc(50% + 322px);
-  animation: timeline-cycle 2s steps(4) 0s infinite;
+.description .circle {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: url('../../assets/img/timeline.svg') left center;
+	background-size: auto 100%;
+	top: 136px;
+	left: calc(50% + 322px);
+	animation: timeline-cycle 2s steps(4) 0s infinite;
 }
 
 p .enforce {
-  font-weight: 400;
+	font-weight: 400;
+}
+
+.inline {
+	position: absolute;
+	opacity: 0;
+}
+
+.inline:hover {
+	opacity: 1;
+}
+
+.inline#a {
+	top: 130px;
+	left: calc(50% - 65px);
+	height: 24px;
+}
+
+.inline#b {
+	top: 130px;
+	left: calc(50% - 325px);
+	height: 24px;
+}
+
+.inline#c {
+	top: 156px;
+	left: calc(50% - 185px);
+	height: 24px;
+}
+
+.inline#d {
+	top: 156px;
+	left: calc(50% - 332px);
+	height: 24px;
 }
 
 .snowfall {
-  height: 580px;
-  overflow: hidden;
-  margin-top: 120px;
+	height: 580px;
+	overflow: hidden;
+	margin-top: 120px;
 }
 
 .model-container {
-  margin-top: 80px;
+	margin-top: 80px;
+	overflow-y: hidden;
 }
 
 .model-container .title-container {
-  margin: 0 auto;
-  width: 1094px;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
+	margin: 0 auto;
+	width: 1094px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
 }
 
 .title-container img {
-  height: 24px;
+	height: 24px;
 }
 
 .bricks-parent {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-  overflow: hidden;
-  margin-top: 100px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
+	overflow: hidden;
+	margin-top: 100px;
 }
 
 .bricks {
-  z-index: 1;
-  display: flex;
-  align-content: center;
-  position: relative;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+	z-index: 1;
+	display: flex;
+	align-content: center;
+	position: relative;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 @keyframes scroll-rl {
-  from {
-    margin-left: 1800px;
-  }
-  to {
-    margin-left: 0;
-  }
+	from {
+		margin-left: 1800px;
+	}
+	to {
+		margin-left: 0;
+	}
 }
 
 @keyframes scroll-lr {
-  from {
-    margin-left: 0;
-  }
-  to {
-    margin-left: 1800px;
-  }
+	from {
+		margin-left: 0;
+	}
+	to {
+		margin-left: 1800px;
+	}
 }
 
 .bricks#b {
-  animation-name: scroll-rl;
+	animation-name: scroll-rl;
 }
 
 .bricks#a, .bricks#c {
-  animation-name: scroll-lr;
+	animation-name: scroll-lr;
 }
 
 .bricks#c {
-  animation-duration: 5s;
+	animation-duration: 5s;
 }
 
 .brick {
-  width: 900px;
-  height: 105px;
-  background-color: black;
-  border-radius: 9px;
-  position: relative;
-  z-index: 2;
+	width: 900px;
+	height: 105px;
+	background-color: black;
+	border-radius: 9px;
+	position: relative;
+	z-index: 2;
 }
 
 .brick:hover {
-  background-color: white;
+	background-color: white;
 }
 
 .brick img {
-  position: absolute;
-  left: 18px;
-  top: 14px;
-  width: 96%;
+	position: absolute;
+	left: 18px;
+	top: 14px;
+	width: 96%;
 }
 
 .brick .active {
-  display: none;
+	display: none;
 }
 
 .brick:hover .active {
-  display: initial;
+	display: initial;
 }
 
 .brick:hover .inactive {
-  display: none;
+	display: none;
 }
 
 .logo-small-container {
-  margin-top: 80px;
-  margin-bottom: 40px;
-  overflow: hidden;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	overflow: hidden;
 }
 
 .logo-small-container img {
-  height: 80px;
+	height: 80px;
 }
 
 .logo-small-container a {
-  font-family: 'Inter';
-  position: absolute;
-  color: white;
-  font-size: 22px;
-  font-weight: 400;
-  right: 56px;
-  bottom: 4px;
-  text-decoration: none;
+	font-family: 'Inter';
+	position: absolute;
+	color: white;
+	font-size: 22px;
+	font-weight: 400;
+	right: 56px;
+	bottom: 4px;
+	text-decoration: none;
 }
 
 .logo-small-container a:hover {
-  color: gray;
+	color: gray;
 }
-
