@@ -29,6 +29,9 @@ me@aydar.media
 	body {
 		zoom: 0.75;
 	}
+	.inline {
+		display: none;
+	}
 	.model-container .three {
 		width: 950px;
 		height: 950px;
@@ -62,10 +65,13 @@ me@aydar.media
 	.description > div {
 		width: 100%;
 	}
-	.description .circle {
-		display: none;
+	.description h1 {
+		overflow-wrap: break-word;
 	}
-	.inline {
+	.description .fontswap:hover {
+		font-family: initial;
+	}
+	.description .circle {
 		display: none;
 	}
 	.description p {
