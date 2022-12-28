@@ -28,7 +28,7 @@ body > div {
 .logo-big img {
 	height: 240px;
 	animation-name: scroll-logo;
-	animation-duration: 3s;
+	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
