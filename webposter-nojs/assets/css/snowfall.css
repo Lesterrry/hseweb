@@ -1,0 +1,300 @@
+/*************************
+Handcrafted by Aydar N.
+2022
+
+me@aydar.media
+
+*************************/
+
+.snowflake {
+	position: absolute;
+	background-color: white;
+	border-radius: 17px;
+	padding: 10px 30px;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	top: -200px;
+}
+
+.snowflake h1 {
+	font-family: 'Skip Display';
+	font-size: 34px;
+	margin-top: 6px;
+	margin-left: 2px;
+	color: black;
+}
+
+.snowflake:hover {
+	animation-play-state: paused;
+	background-color: black;
+}
+
+.snowflake:hover h1 {
+	color: white;
+}
+
+.snowflake.a {
+	animation-name: fall, rotate-a;
+	animation-duration: 12s;
+}
+
+.snowflake.b {
+	animation-name: fall, rotate-b;
+	animation-duration: 8s;
+}
+
+.snowflake.c {
+	animation-name: fall, rotate-c;
+	animation-duration: 6s;
+}
+
+.snowflake.d {
+	animation-name: fall, rotate-d;
+	animation-duration: 4s;
+}
+
+.snowflake.e {
+	animation-name: fall, rotate-e;
+	animation-duration: 5s;
+}
+
+.snowflake.f {
+	animation-name: fall, rotate-f;
+	animation-duration: 7s;
+}
+
+.snowflake.g {
+	animation-name: fall, rotate-g;
+	animation-duration: 10s;
+}
+
+.snowflake.h {
+	animation-name: fall, rotate-h;
+	animation-duration: 13s;
+}
+
+@keyframes fall {
+	from {
+		top: -200px;
+	}
+	to {
+		top: 780px;
+	}
+}
+
+@keyframes rotate-a {
+	from {
+		transform: rotate(-9deg);
+	}
+	to {
+		transform: rotate(6deg);
+	}
+}
+
+@keyframes rotate-b {
+	from {
+		transform: rotate(15deg);
+	}
+	to {
+		transform: rotate(2deg);
+	}
+}
+
+@keyframes rotate-c {
+	from {
+		transform: rotate(-20deg);
+	}
+	to {
+		transform: rotate(-8deg);
+	}
+}
+
+@keyframes rotate-d {
+	from {
+		transform: rotate(-20deg);
+	}
+	to {
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes rotate-e {
+	from {
+		transform: rotate(-20deg);
+	}
+	to {
+		transform: rotate(5deg);
+	}
+}
+
+@keyframes rotate-f {
+	from {
+		transform: rotate(30deg);
+	}
+	to {
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes rotate-g {
+	from {
+		transform: rotate(-20deg);
+	}
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+@keyframes rotate-h {
+	from {
+		transform: rotate(-30deg);
+	}
+	to {
+		transform: rotate(-20deg);
+	}
+}
+
+.snowflake#lo1 {
+	left: calc(50% - 460px);
+	animation-delay: 1s;
+}
+
+.snowflake#lo2 {
+	left: calc(50% - 160px);
+	animation-delay: 4s;
+}
+
+.snowflake#ye1 {
+	left: calc(50% - 380px);
+	animation-delay: 0s;
+}
+
+.snowflake#ye2 {
+	left: calc(50% - 110px);
+	animation-delay: 6s;
+}
+
+.snowflake#to1 {
+	left: calc(50% + 120px);
+	animation-delay: 1s;
+}
+
+.snowflake#to2 {
+	left: calc(50% + 180px);
+	animation-delay: 2s;
+}
+
+.snowflake#sk1 {
+	left: calc(50% + 220px);
+	animation-delay: 3s;
+}
+
+.snowflake#sk2 {
+	left: calc(50% - 220px);
+	animation-delay: 4s;
+}
+
+.snowflake#sk3 {
+	left: calc(50% - 540px);
+	animation-delay: 1s;
+}
+
+.snowflake#th1 {
+	left: calc(50% - 220px);
+	animation-delay: 2s;
+}
+
+.snowflake#th2 {
+	left: calc(50% - 360px);
+	animation-delay: 3s;
+}
+
+.snowflake#tm1 {
+	left: calc(50% - 180px);
+	animation-delay: 4s;
+}
+
+.snowflake#tm2 {
+	left: calc(50% - 640px);
+	animation-delay: 5s;
+}
+
+.snowflake#no1 {
+	left: calc(50%);
+	animation-delay: 1s;
+}
+
+.snowflake#no2 {
+	left: calc(50% + 165px);
+	animation-delay: 2s;
+}
+
+.snowflake#fa1 {
+	left: calc(50% + 35px);
+	animation-delay: 3s;
+}
+
+.snowflake#fa2 {
+	left: calc(50% - 255px);
+	animation-delay: 4s;
+}
+
+.snowflake#sp1 {
+	left: calc(50% + 175px);
+	animation-delay: 5s;
+}
+
+.snowflake#sp2 {
+	left: calc(50% - 526px);
+	animation-delay: 2s;
+}
+
+.snowflake#so1 {
+	left: calc(50% - 360px);
+	animation-delay: 3s;
+}
+
+.snowflake#so2 {
+	left: calc(50% - 300px);
+	animation-delay: 4s;
+}
+
+.snowflake#sl1 {
+	left: calc(50% - 510px);
+	animation-delay: 5s;
+}
+
+.snowflake#sl2 {
+	left: calc(50% - 140px);
+	animation-delay: 2s;
+}
+
+.snowflake#qu1 {
+	left: calc(50% - 675px);
+	animation-delay: 1s;
+}
+
+.snowflake#qu2 {
+	left: calc(50% - 190px);
+	animation-delay: 4s;
+}
+
+.snowflake#ja1 {
+	left: calc(50% - 420px);
+	animation-delay: 3s;
+}
+
+.snowflake#ja2 {
+	left: calc(50% + 26px);
+	animation-delay: 2s;
+}
+
+.snowflake#mi1 {
+	left: calc(50% + 286px);
+	animation-delay: 5s;
+}
+
+.snowflake#mi2 {
+	left: calc(50% - 86px);
+	animation-delay: 6s;
+}
