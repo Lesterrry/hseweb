@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	-webkit-user-select: none;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -15,12 +16,11 @@ html, body {
 
 body {
 	background-color: #dbd7d2;
-	cursor: none;
 }
 
-@media all and (max-width: 800px), all and (max-height: 550px) {
+@media all and (max-width: 800px), all and (max-height: 500px) {
 	body > .overlay {
-	/*display: initial;*/
+	display: initial;
 	}
 }
 
@@ -135,13 +135,15 @@ body {
 }
 
 .logo {
+	z-index: 5;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	margin: auto auto;
-	height: 10px;
+	height: 20px;
+	width: 120px;
 }
 
 .overlay {
@@ -155,7 +157,7 @@ body {
 
 .overlay h1 {
 	color: white;
-	font-family: 'JetBrains Mono';
+	font-size: 16px;
 	position: absolute;
 	text-align: center;
 	margin: auto auto;
@@ -178,7 +180,6 @@ body {
 .content h1 {
 	z-index: 2;
 	position: absolute;
-	font-family: 'JetBrains Mono';
 	font-size: 72px;
 	font-weight: 600;
 	left: 22px;
@@ -188,7 +189,6 @@ body {
 .content h3 {
 	z-index: 2;
 	position: absolute;
-	font-family: 'JetBrains Mono';
 	font-size: 10px;
 	font-weight: 500;
 }
@@ -252,7 +252,6 @@ body {
 }
 
 .content .quest-progress h2 {
-	font-family: 'JetBrains Mono';
 	font-size: 18px;
 	font-weight: 400;
 	color: white;
@@ -275,7 +274,6 @@ body {
 
 .content .quest-progress h3 {
 	position: relative;
-	font-family: 'JetBrains Mono';
 	font-size: 16px;
 	font-weight: 400;
 	color: white;
@@ -285,7 +283,6 @@ body {
 
 .content .quest-progress p {
 	position: relative;
-	font-family: 'JetBrains Mono';
 	font-size: 12px;
 	font-weight: 400;
 	color: darkgray;
@@ -298,9 +295,11 @@ canvas {
 
 .cursor-sub {
 	display: none;
-	z-index: 4;
+	z-index: 1;
 	position: absolute;
 	background-color: black;
+	/*-webkit-backdrop-filter: invert(100%);
+  	backdrop-filter: invert(100%);*/
 	border-radius: 50%;
 	width: 22px;
 	height: 22px;
