@@ -1,0 +1,311 @@
+*, ::after, ::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'JetBrains Mono';
+	line-height: 1.4;
+}
+
+html, body {
+	overflow: hidden;
+}
+
+body {
+	background-color: #dbd7d2;
+	cursor: none;
+}
+
+@media all and (max-width: 800px), all and (max-height: 550px) {
+	body > .overlay {
+	/*display: initial;*/
+	}
+}
+
+.webgl {
+	position: fixed;
+	top: 0;
+	left: 0;
+	outline: none;
+}
+
+.frame {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.frame-part {
+	z-index: 2;
+	background-color: black;
+	position: absolute;
+}
+
+.frame-part#u, .frame-part#d {
+	width: 100%;
+	height: 25px;
+}
+
+.frame-part#r, .frame-part#l {
+	height: 100%;
+	width: 25px;
+}
+
+.frame-part#l {
+	left: 0;
+}
+
+.frame-part#r {
+	right: 0;
+}
+
+.frame-part#u {
+	top: 0;
+}
+
+.frame-part#d {
+	bottom: 0;
+	height: 60px;
+}
+
+.frame-corner {
+	position: absolute;
+	z-index: 2;
+}
+
+.frame-corner#lu {
+	transform: rotate(90deg);
+	top: 5px;
+	left: 5px;
+}
+
+.frame-corner#ru {
+	transform: rotate(180deg);
+	top: 5px;
+	right: 5px;
+}
+
+.frame-corner#ld {
+	bottom: 40px;
+	left: 5px;
+}
+
+.frame-corner#rd {
+	transform: rotate(270deg);
+	bottom: 40px;
+	right: 5px;
+}
+
+.menu {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	position: absolute;
+	height: 16px;
+	margin: auto auto;
+	left: 40px;
+	right: 40px;
+	top: 0;
+	bottom: 0;
+}
+
+.menu .items {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	width: 40%;
+}
+
+.menu .placeholder {
+	background-color: initial;
+	width: 40%;
+}
+
+.menu a {
+	color: white;
+	font-family: 'JetBrains Mono';
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.menu a:hover {
+	color: gray;
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	height: 10px;
+}
+
+.overlay {
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	display: none;
+}
+
+.overlay h1 {
+	color: white;
+	font-family: 'JetBrains Mono';
+	position: absolute;
+	text-align: center;
+	margin: auto auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 18px;
+}
+
+.content {
+	position: absolute;
+	margin: auto auto;
+	top: 25px;
+	bottom: 60px;
+	left: 25px;
+	right: 25px;
+}
+
+.content h1 {
+	z-index: 2;
+	position: absolute;
+	font-family: 'JetBrains Mono';
+	font-size: 72px;
+	font-weight: 600;
+	left: 22px;
+	top: 32px;
+}
+
+.content h3 {
+	z-index: 2;
+	position: absolute;
+	font-family: 'JetBrains Mono';
+	font-size: 10px;
+	font-weight: 500;
+}
+
+.content h3#lu {
+	top: 25px;
+	left: 30px;
+}
+
+.content h3#ru {
+	top: 25px;
+	right: 30px;
+	text-align: right;
+}
+
+.content h3#ld {
+	bottom: 18px;
+	left: 30px;
+}
+
+.content h3#rd {
+	bottom: 18px;
+	right: 30px;
+	text-align: right;
+}
+
+.content .description {
+	z-index: 2;
+	position: absolute;
+	background-color: black;
+	top: 140px;
+	left: 30px;
+	width: 280px;
+	padding: 20px;
+}
+
+.content .description p {
+	margin-bottom: 0;
+	font-weight: 400;
+	font-size: 12px;
+	color: white;
+}
+
+.content .quest-progress {
+	z-index: 2;
+	position: absolute;
+	background-color: black;
+	top: 140px;
+	right: 30px;
+	width: 278px;
+	padding: 20px;
+}
+
+.content .quest-progress div {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	height: 24px;
+	margin-bottom: 12px;
+}
+
+.content .quest-progress h2 {
+	font-family: 'JetBrains Mono';
+	font-size: 18px;
+	font-weight: 400;
+	color: white;
+	margin-bottom: 0;
+	margin: auto 0;
+}
+
+@keyframes spin {
+	from {
+	transform: rotate(0deg);
+	}
+	to {
+	transform: rotate(360deg);
+	}
+}
+
+.content .quest-progress img {
+	animation: spin 3s linear infinite;
+}
+
+.content .quest-progress h3 {
+	position: relative;
+	font-family: 'JetBrains Mono';
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.content .quest-progress p {
+	position: relative;
+	font-family: 'JetBrains Mono';
+	font-size: 12px;
+	font-weight: 400;
+	color: darkgray;
+	margin-top: 0;
+}
+
+canvas {
+	z-index: 1;
+}
+
+.cursor-sub {
+	display: none;
+	z-index: 4;
+	position: absolute;
+	background-color: black;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+}
+
+body:hover > .cursor-sub {
+	display: initial;
+}
